@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      pool-name: Hikari
+      auto-commit: false
+    url: jdbc:postgresql://localhost:5432/base-springboot
+    username: kani-user
+    password: kani-password
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true

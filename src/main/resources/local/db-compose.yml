@@ -1,0 +1,27 @@
+services:
+  postgres:
+    image: postgres
+    hostname: postgres
+    container_name: app-postgres
+    environment:
+      - POSTGRES_PASSWORD=kani-password
+      - POSTGRES_USER=kani-user
+      - POSTGRES_DB=base-springboot
+    ports:
+      - '5432:5432'
+    networks:
+      - postgres
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d/
+    healthcheck:
+      test: psql -U kani-user base-springboot
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  postgres:
+    driver: bridge
+volumes:
+  pgadmin-data:
