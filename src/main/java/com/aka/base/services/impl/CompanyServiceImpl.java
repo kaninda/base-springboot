@@ -1,8 +1,8 @@
-package com.aka.n1problem.services.impl;
+package com.aka.base.services.impl;
 
-import com.aka.n1problem.models.Company;
-import com.aka.n1problem.repositories.CompanyRepository;
-import com.aka.n1problem.services.CompanyService;
+import com.aka.base.models.Company;
+import com.aka.base.repositories.CompanyRepository;
+import com.aka.base.services.CompanyService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -23,5 +23,4 @@ public class CompanyServiceImpl implements CompanyService {
     public List<Company> getAll() {
         return companyRepository.findAll();
     }
-
 }

@@ -1,6 +1,6 @@
-package com.aka.n1problem.repositories;
+package com.aka.base.repositories;
 
-import com.aka.n1problem.models.Employee;
+import com.aka.base.models.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {

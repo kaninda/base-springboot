@@ -1,6 +1,6 @@
-package com.aka.n1problem.services;
+package com.aka.base.services;
 
-import com.aka.n1problem.models.Employee;
+import com.aka.base.models.Employee;
 
 import java.util.List;
 

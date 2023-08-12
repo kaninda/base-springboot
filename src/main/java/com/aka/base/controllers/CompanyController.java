@@ -1,7 +1,7 @@
-package com.aka.n1problem.controllers;
+package com.aka.base.controllers;
 
-import com.aka.n1problem.models.Company;
-import com.aka.n1problem.services.CompanyService;
+import com.aka.base.models.Company;
+import com.aka.base.services.CompanyService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;

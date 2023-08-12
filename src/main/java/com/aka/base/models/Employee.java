@@ -1,4 +1,4 @@
-package com.aka.n1problem.models;
+package com.aka.base.models;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.Getter;

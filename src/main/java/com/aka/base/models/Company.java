@@ -1,4 +1,4 @@
-package com.aka.n1problem.models;
+package com.aka.base.models;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.Entity;

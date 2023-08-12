@@ -1,10 +1,7 @@
-package com.aka.n1problem;
+package com.aka.base;
 
-import com.aka.n1problem.services.CompanyService;
+import com.aka.base.services.CompanyService;
 import jakarta.persistence.EntityManager;
-import org.hibernate.Session;
-import org.hibernate.stat.Statistics;
-import org.junit.jupiter.api.Test;
 
 public class CompanyServiceIntegrationTest {
 

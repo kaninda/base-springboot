@@ -1,6 +1,6 @@
-package com.aka.n1problem.services;
+package com.aka.base.services;
 
-import com.aka.n1problem.models.Company;
+import com.aka.base.models.Company;
 
 import java.util.List;
 

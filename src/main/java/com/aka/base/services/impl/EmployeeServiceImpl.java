@@ -1,8 +1,8 @@
-package com.aka.n1problem.services.impl;
+package com.aka.base.services.impl;
 
-import com.aka.n1problem.models.Employee;
-import com.aka.n1problem.repositories.EmployeeRepository;
-import com.aka.n1problem.services.EmployeeService;
+import com.aka.base.models.Employee;
+import com.aka.base.repositories.EmployeeRepository;
+import com.aka.base.services.EmployeeService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
