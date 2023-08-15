@@ -14,7 +14,7 @@ import java.util.List;
 
 @RequestMapping(
         name = "CompanyController",
-        value = "/api/v1/company",
+        value = "/api/v1/companies",
         produces = MediaType.APPLICATION_JSON_VALUE
 )
 @RestController
