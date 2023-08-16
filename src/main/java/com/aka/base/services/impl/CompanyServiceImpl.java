@@ -23,4 +23,20 @@ public class CompanyServiceImpl implements CompanyService {
     public List<Company> getAll() {
         return companyRepository.findAll();
     }
+
+    @Override
+    public void addCompany(Company company) {
+        Boolean existingName = companyRepository.selectExistsName(company.getName());
+        if(existingName){
+          throw new RuntimeException("Name "+company.getName()+ " taken");
+        }
+        companyRepository.save(company);
+    }
+    @Override
+    public void deleteCompany(Long companyId) {
+        if(!companyRepository.existsById(companyId)){
+            throw new RuntimeException("Company with "+ companyId + "does not exists");
+        }
+        companyRepository.deleteById(companyId);
+    }
 }
