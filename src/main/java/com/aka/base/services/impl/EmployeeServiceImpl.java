@@ -17,16 +17,16 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public List<Employee> getAll() {
-       return employeeRepository.findAll();
+        return employeeRepository.findAll();
     }
 
     @Override
     public Employee getByFirstName(String name) {
-      return employeeRepository.findByFirstName(name);
+        return employeeRepository.findByFirstName(name);
     }
 
     @Override
     public Employee getByLastName(String name) {
-        return employeeRepository.findByFirstName(name);
+        return employeeRepository.findByLastName(name);
     }
 }
